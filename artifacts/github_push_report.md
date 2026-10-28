@@ -11,8 +11,8 @@
 
 | Item | Details |
 | :--- | :--- |
-| **Commit Hash** | `7f2321e` (`Initial commit: reproducible benchmark of hybrid quantum-classical RL`) |
-| **Total Files Tracked** | 160 files (`git ls-files | Measure-Object -Line`) |
+| **Commit Hash** | `00e1b70` (Initial publication commit: `7f2321e`) |
+| **Total Files Tracked** | 172 files (`git ls-files | Measure-Object -Line`) |
 | **Repository Size** | 5.16 MiB (`git count-objects -vH`) |
 | **Tracking State** | `Your branch is up to date with 'origin/main'. nothing to commit, working tree clean` |
 
@@ -20,7 +20,7 @@
 
 ## 2. Tracked Content Categories
 
-The 160 tracked repository files encompass all artifacts, source code, benchmarks, unit tests, and figure outputs:
+The 172 tracked repository files encompass all artifacts, source code, benchmarks, unit tests, figure outputs, and publication subsets:
 
 - **Manuscript:** `paper_draft.md` (42 KB, 5,828 words)
 - **Environment & Lockfiles:** `requirements-lock.txt`, `pytest.ini`, `.gitignore`
@@ -36,7 +36,7 @@ The 160 tracked repository files encompass all artifacts, source code, benchmark
   - Metrics and evaluation utilities (`src/evaluation/`)
 - **Unit Test Suite (`tests/`):** 8 test suites (52 passing unit tests)
 - **Raw Datasets (`artifacts/*.json`):** All 5 primary benchmark datasets (`canonical_results.json`, `grand_hybrid_comparison_results.json`, `new_architectures_benchmark_results.json`, `oracle_comparison_results.json`, `hqwm_fsp_results.json`) and protocol outputs
-- **Publication Figures (`artifacts/figures/`):** All 41 PNG diagnostic figures and diagrams
+- **Publication Figures (`artifacts/figures/` & `paper_figures/`):** All 41 PNG diagnostic figures and diagrams in `artifacts/figures/` plus 11 publication PNGs in `paper_figures/`
 - **Audit Trails & Verification Reports:** `round8_audit_report.md`, `round9_finite_shots_fix.md`, `round10_resolution_report.md`, `round11_bugfix_report.md`, `finalization_report.md`, `final_submission_package.md`
 
 ---
@@ -54,8 +54,11 @@ Per pre-commit safety constraints, the following files were safely excluded:
 ## 4. Verification Output
 
 ```powershell
-git log --oneline -1
-# Output: 7f2321e Initial commit: reproducible benchmark of hybrid quantum-classical RL
+git log --oneline -3
+# Output:
+# 00e1b70 docs: add paper_figures subset
+# 3ec975e docs: add GitHub publication report
+# 7f2321e Initial commit: reproducible benchmark of hybrid quantum-classical RL
 
 git status
 # Output: On branch main
@@ -67,4 +70,4 @@ git status
 
 ## 5. Final Sign-Off Statement
 
-Repository pushed successfully. Commit 7f2321e. 160 files tracked. Remote: https://github.com/pardhuvenkatta/Hybrid-Quantum-Classical-Reinforcement-Learning
+Repository pushed successfully. Commit 7f2321e (latest HEAD: 00e1b70). 172 files tracked. Remote: https://github.com/pardhuvenkatta/Hybrid-Quantum-Classical-Reinforcement-Learning
