@@ -1,0 +1,217 @@
+{
+  "metadata": {
+    "num_seeds": 20,
+    "horizons": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "episodes": 50,
+    "shots": 128,
+    "grid_size": 6,
+    "total_bonferroni_comparisons": 15,
+    "timestamp": "2026-10-28 17:01:44"
+  },
+  "H2": {
+    "classical": {
+      "mean": 0.25604999999999994,
+      "std": 0.0610569201647119,
+      "ci95": 0.026759375101074397,
+      "success": 0.968
+    },
+    "quantum_exact": {
+      "mean": -1.1446,
+      "std": 0.17005981300707113,
+      "ci95": 0.07453199921644393,
+      "success": 0.884
+    },
+    "quantum_continuous": {
+      "mean": -5.07765,
+      "std": 0.4378955668878141,
+      "ci95": 0.19191619390296383,
+      "success": 0.12000000000000002
+    },
+    "stats": {
+      "exact_vs_classical": {
+        "t_stat": -35.38349773328421,
+        "p_val_uncorrected": 8.291087817801015e-19,
+        "p_val_bonferroni": 1.2436631726701523e-17,
+        "cohens_d": -10.685041739279606
+      },
+      "continuous_vs_classical": {
+        "t_stat": -50.87967019363587,
+        "p_val_uncorrected": 8.952305384152683e-22,
+        "p_val_bonferroni": 1.3428458076229025e-20,
+        "cohens_d": -16.628523644547542
+      },
+      "exact_vs_continuous": {
+        "t_stat": 30.79158979661471,
+        "p_val_uncorrected": 1.1138678321419802e-17,
+        "p_val_bonferroni": 1.6708017482129704e-16,
+        "cohens_d": 11.540690622090098
+      }
+    }
+  },
+  "H3": {
+    "classical": {
+      "mean": 0.25604999999999994,
+      "std": 0.0610569201647119,
+      "ci95": 0.026759375101074397,
+      "success": 0.968
+    },
+    "quantum_exact": {
+      "mean": -0.9311,
+      "std": 0.2211105831931163,
+      "ci95": 0.09690598573462839,
+      "success": 0.9009999999999998
+    },
+    "quantum_continuous": {
+      "mean": -3.691600000000001,
+      "std": 0.40489941960936443,
+      "ci95": 0.17745499475416301,
+      "success": 0.08900000000000001
+    },
+    "stats": {
+      "exact_vs_classical": {
+        "t_stat": -26.033534088279573,
+        "p_val_uncorrected": 2.5190417091633585e-16,
+        "p_val_bonferroni": 3.7785625637450374e-15,
+        "cohens_d": -7.133717379122172
+      },
+      "continuous_vs_classical": {
+        "t_stat": -43.69287518119064,
+        "p_val_uncorrected": 1.5786820896057566e-20,
+        "p_val_bonferroni": 2.3680231344086347e-19,
+        "cohens_d": -13.288802070261658
+      },
+      "exact_vs_continuous": {
+        "t_stat": 26.96828314051506,
+        "p_val_uncorrected": 1.3105661654892868e-16,
+        "p_val_bonferroni": 1.96584924823393e-15,
+        "cohens_d": 8.247923608265463
+      }
+    }
+  },
+  "H4": {
+    "classical": {
+      "mean": 0.25604999999999994,
+      "std": 0.0610569201647119,
+      "ci95": 0.026759375101074397,
+      "success": 0.968
+    },
+    "quantum_exact": {
+      "mean": 0.0961999999999999,
+      "std": 0.08325298793436788,
+      "ci95": 0.03648723070883841,
+      "success": 0.9479999999999998
+    },
+    "quantum_continuous": {
+      "mean": -2.03255,
+      "std": 0.17563526838308982,
+      "ci95": 0.07697555027279764,
+      "success": 0.625
+    },
+    "stats": {
+      "exact_vs_classical": {
+        "t_stat": -8.808077300756386,
+        "p_val_uncorrected": 3.900464444469955e-08,
+        "p_val_bonferroni": 5.850696666704933e-07,
+        "cohens_d": -2.134180056489123
+      },
+      "continuous_vs_classical": {
+        "t_stat": -54.50768535511134,
+        "p_val_uncorrected": 2.439300898153964e-22,
+        "p_val_bonferroni": 3.658951347230946e-21,
+        "cohens_d": -16.96528793163529
+      },
+      "exact_vs_continuous": {
+        "t_stat": 61.42641640059499,
+        "p_val_uncorrected": 2.5499141451244505e-23,
+        "p_val_bonferroni": 3.8248712176866757e-22,
+        "cohens_d": 15.096537108297856
+      }
+    }
+  },
+  "H5": {
+    "classical": {
+      "mean": 0.25604999999999994,
+      "std": 0.0610569201647119,
+      "ci95": 0.026759375101074397,
+      "success": 0.968
+    },
+    "quantum_exact": {
+      "mean": -0.9346000000000002,
+      "std": 0.20489860907287785,
+      "ci95": 0.08980077480289356,
+      "success": 0.9289999999999999
+    },
+    "quantum_continuous": {
+      "mean": -2.253,
+      "std": 0.20350847648193912,
+      "ci95": 0.08919152233256249,
+      "success": 0.742
+    },
+    "stats": {
+      "exact_vs_classical": {
+        "t_stat": -25.540159540084712,
+        "p_val_uncorrected": 3.5887086933524293e-16,
+        "p_val_bonferroni": 5.383063040028644e-15,
+        "cohens_d": -7.67624300892
+      },
+      "continuous_vs_classical": {
+        "t_stat": -51.62389319192693,
+        "p_val_uncorrected": 6.806622148140174e-22,
+        "p_val_bonferroni": 1.0209933222210261e-20,
+        "cohens_d": -16.27750334905547
+      },
+      "exact_vs_continuous": {
+        "t_stat": 19.520773070693068,
+        "p_val_uncorrected": 4.9471616846395026e-14,
+        "p_val_bonferroni": 7.420742526959254e-13,
+        "cohens_d": 6.292789561980582
+      }
+    }
+  },
+  "H6": {
+    "classical": {
+      "mean": 0.25604999999999994,
+      "std": 0.0610569201647119,
+      "ci95": 0.026759375101074397,
+      "success": 0.968
+    },
+    "quantum_exact": {
+      "mean": -0.22090000000000004,
+      "std": 0.1025918612756392,
+      "ci95": 0.044962865647109274,
+      "success": 0.9770000000000001
+    },
+    "quantum_continuous": {
+      "mean": -3.0174000000000003,
+      "std": 0.32477305922751654,
+      "ci95": 0.14233806898788529,
+      "success": 0.724
+    },
+    "stats": {
+      "exact_vs_classical": {
+        "t_stat": -16.460904227383363,
+        "p_val_uncorrected": 1.0618332086776927e-12,
+        "p_val_bonferroni": 1.592749813016539e-11,
+        "cohens_d": -5.506757344671125
+      },
+      "continuous_vs_classical": {
+        "t_stat": -43.34630945452589,
+        "p_val_uncorrected": 1.8339373578301356e-20,
+        "p_val_bonferroni": 2.7509060367452034e-19,
+        "cohens_d": -13.654012032624156
+      },
+      "exact_vs_continuous": {
+        "t_stat": 42.836039234962236,
+        "p_val_uncorrected": 2.291687451388671e-20,
+        "p_val_bonferroni": 3.4375311770830064e-19,
+        "cohens_d": 11.317687712448517
+      }
+    }
+  }
+}

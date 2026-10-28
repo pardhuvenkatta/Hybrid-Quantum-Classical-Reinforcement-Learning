@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# Secrets
+.env
+.env.local
+*.key
+*.pem
+credentials.json
+secrets.json
+
+# Large model files & binaries
+*.pkl
+*.pt
+*.h5
+tectonic.exe
+tectonic.zip
+*.bak
+
+# Internal submission notes (excluded per constraint)
+artifacts/submission_notes_internal.md
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,126 @@
+{
+  "scaling_experiments": {
+    "H2": {
+      "horizon": 2,
+      "qubits": 4,
+      "candidate_futures": 16,
+      "classical_mean_reward": 0.74264,
+      "classical_std_reward": 0.030243915090477313,
+      "quantum_mean_reward": 0.68876,
+      "quantum_std_reward": 0.028045933751615404,
+      "classical_success_rate": 0.984,
+      "quantum_success_rate": 0.9899999999999999,
+      "classical_avg_steps": 8.828,
+      "quantum_avg_steps": 10.892,
+      "paired_t_stat": -3.2171476613383003,
+      "p_val_t": 0.010537459625492428,
+      "cohens_d": -1.75257806118216
+    },
+    "H3": {
+      "horizon": 3,
+      "qubits": 6,
+      "candidate_futures": 64,
+      "classical_mean_reward": 0.74264,
+      "classical_std_reward": 0.030243915090477313,
+      "quantum_mean_reward": 0.7574,
+      "quantum_std_reward": 0.02971450824092503,
+      "classical_success_rate": 0.984,
+      "quantum_success_rate": 0.994,
+      "classical_avg_steps": 8.828,
+      "quantum_avg_steps": 9.295999999999998,
+      "paired_t_stat": 0.8538228411277079,
+      "p_val_t": 0.4153497974020933,
+      "cohens_d": 0.4670576344246355
+    },
+    "H4": {
+      "horizon": 4,
+      "qubits": 8,
+      "candidate_futures": 256,
+      "classical_mean_reward": 0.74264,
+      "classical_std_reward": 0.030243915090477313,
+      "quantum_mean_reward": 0.76596,
+      "quantum_std_reward": 0.03226859773835855,
+      "classical_success_rate": 0.984,
+      "quantum_success_rate": 0.99,
+      "classical_avg_steps": 8.828,
+      "quantum_avg_steps": 8.778000000000002,
+      "paired_t_stat": 1.651896889249412,
+      "p_val_t": 0.1329488025340876,
+      "cohens_d": 0.7074327632210727
+    },
+    "H5": {
+      "horizon": 5,
+      "qubits": 10,
+      "candidate_futures": 1024,
+      "classical_mean_reward": 0.74264,
+      "classical_std_reward": 0.030243915090477313,
+      "quantum_mean_reward": 0.75912,
+      "quantum_std_reward": 0.03109201826835949,
+      "classical_success_rate": 0.984,
+      "quantum_success_rate": 0.9960000000000001,
+      "classical_avg_steps": 8.828,
+      "quantum_avg_steps": 9.318,
+      "paired_t_stat": 0.9784975061935636,
+      "p_val_t": 0.35339624470214587,
+      "cohens_d": 0.5097438170856493
+    },
+    "H6": {
+      "horizon": 6,
+      "qubits": 12,
+      "candidate_futures": 4096,
+      "classical_mean_reward": 0.74264,
+      "classical_std_reward": 0.030243915090477313,
+      "quantum_mean_reward": 0.7763199999999999,
+      "quantum_std_reward": 0.015574132399591295,
+      "classical_success_rate": 0.984,
+      "quantum_success_rate": 0.9960000000000001,
+      "classical_avg_steps": 8.828,
+      "quantum_avg_steps": 8.925999999999998,
+      "paired_t_stat": 2.9602818261418355,
+      "p_val_t": 0.01595221327601027,
+      "cohens_d": 1.3282967680261326
+    }
+  },
+  "ablation_experiments_H4": {
+    "Full_QWM": {
+      "config": {
+        "enable_oracle": true,
+        "enable_interference": true
+      },
+      "mean_reward": 0.76596,
+      "std_reward": 0.03226859773835855,
+      "success_rate": 0.99,
+      "avg_steps": 8.778000000000002
+    },
+    "No_Oracle": {
+      "config": {
+        "enable_oracle": false,
+        "enable_interference": true
+      },
+      "mean_reward": -2.6738400000000007,
+      "std_reward": 0.1334356114386261,
+      "success_rate": 0.12000000000000002,
+      "avg_steps": 27.438
+    },
+    "No_Interference": {
+      "config": {
+        "enable_oracle": true,
+        "enable_interference": false
+      },
+      "mean_reward": -2.6738400000000007,
+      "std_reward": 0.1334356114386261,
+      "success_rate": 0.12000000000000002,
+      "avg_steps": 27.438
+    },
+    "No_Oracle_No_Interference": {
+      "config": {
+        "enable_oracle": false,
+        "enable_interference": false
+      },
+      "mean_reward": -2.6738400000000007,
+      "std_reward": 0.1334356114386261,
+      "success_rate": 0.12000000000000002,
+      "avg_steps": 27.438
+    }
+  }
+}

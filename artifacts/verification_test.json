@@ -1,0 +1,16 @@
+[
+  {
+    "seed": 42,
+    "classical_mean_reward": 0.683,
+    "quantum_mean_reward": -0.3049999999999996,
+    "classical_success_rate": 1.0,
+    "quantum_success_rate": 0.9
+  },
+  {
+    "seed": 43,
+    "classical_mean_reward": 0.741,
+    "quantum_mean_reward": -0.003999999999999826,
+    "classical_success_rate": 1.0,
+    "quantum_success_rate": 1.0
+  }
+]

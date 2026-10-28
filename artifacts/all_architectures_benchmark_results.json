@@ -1,0 +1,406 @@
+{
+  "metadata": {
+    "num_seeds": 20,
+    "horizons": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "episodes": 50,
+    "grid_size": 6,
+    "architectures_evaluated": [
+      "Classical_Baseline",
+      "Fixed_QWM_Baseline",
+      "Adaptive_QWM_Ours",
+      "PPO_Q",
+      "QLSTM_Reservoir",
+      "Q_RNN",
+      "Q_MCTS"
+    ],
+    "timestamp": "2026-09-21 20:58:06"
+  },
+  "scaling_benchmark": {
+    "H2": {
+      "Classical_Baseline": {
+        "mean_reward": 0.2693499999999999,
+        "std_reward": 0.057469361402402955,
+        "ci95": 0.025187058148978026,
+        "success_rate": 1.0
+      },
+      "Fixed_QWM_Baseline": {
+        "mean_reward": -1.0769000000000004,
+        "std_reward": 0.11880526082627821,
+        "ci95": 0.05206870130126157,
+        "success_rate": 0.9
+      },
+      "Adaptive_QWM_Ours": {
+        "mean_reward": -5.4373000000000005,
+        "std_reward": 0.34718785981079475,
+        "ci95": 0.15216178847792244,
+        "success_rate": 0.5
+      },
+      "PPO_Q": {
+        "mean_reward": -6.53055,
+        "std_reward": 0.4687495573331245,
+        "ci95": 0.20543855142548106,
+        "success_rate": 0.0
+      },
+      "QLSTM_Reservoir": {
+        "mean_reward": -4.444000000000001,
+        "std_reward": 0.0,
+        "ci95": 0.0,
+        "success_rate": 0.0
+      },
+      "Q_RNN": {
+        "mean_reward": -6.571,
+        "std_reward": 8.881784197001252e-16,
+        "ci95": 3.8926135522917237e-16,
+        "success_rate": 0.0
+      },
+      "Q_MCTS": {
+        "mean_reward": -1.9784999999999997,
+        "std_reward": 0.11555366718542515,
+        "ci95": 0.05064362755569549,
+        "success_rate": 1.0
+      },
+      "stats_vs_adaptive": {
+        "Classical_Baseline": {
+          "t_stat": -66.20971339322793,
+          "p_val": 6.1731146268612206e-24,
+          "cohens_d": -22.352382370210385
+        },
+        "Fixed_QWM_Baseline": {
+          "t_stat": -58.0824890061254,
+          "p_val": 7.346548485707505e-23,
+          "cohens_d": -16.37922469350409
+        },
+        "PPO_Q": {
+          "t_stat": 9.071748725873983,
+          "p_val": 2.4677598287605285e-08,
+          "cohens_d": 2.5833740394481666
+        },
+        "QLSTM_Reservoir": {
+          "t_stat": -12.470753795880073,
+          "p_val": 1.3490357089933578e-10,
+          "cohens_d": -3.9435986134171594
+        },
+        "Q_RNN": {
+          "t_stat": 14.233457745282635,
+          "p_val": 1.3797649476809276e-11,
+          "cohens_d": 4.501014545485787
+        },
+        "Q_MCTS": {
+          "t_stat": -39.20233263044589,
+          "p_val": 1.2128359227991995e-19,
+          "cohens_d": -13.029412660800434
+        }
+      }
+    },
+    "H3": {
+      "Classical_Baseline": {
+        "mean_reward": 0.2693499999999999,
+        "std_reward": 0.057469361402402955,
+        "ci95": 0.025187058148978026,
+        "success_rate": 1.0
+      },
+      "Fixed_QWM_Baseline": {
+        "mean_reward": -0.8422000000000001,
+        "std_reward": 0.21604943878658886,
+        "ci95": 0.0946878413989885,
+        "success_rate": 0.95
+      },
+      "Adaptive_QWM_Ours": {
+        "mean_reward": -5.312250000000001,
+        "std_reward": 0.38297008695197077,
+        "ci95": 0.16784404096362793,
+        "success_rate": 0.75
+      },
+      "PPO_Q": {
+        "mean_reward": -6.541199999999999,
+        "std_reward": 0.4305606345220149,
+        "ci95": 0.1887015180564269,
+        "success_rate": 0.05
+      },
+      "QLSTM_Reservoir": {
+        "mean_reward": -4.687,
+        "std_reward": 8.881784197001252e-16,
+        "ci95": 3.8926135522917237e-16,
+        "success_rate": 0.0
+      },
+      "Q_RNN": {
+        "mean_reward": -7.651999999999998,
+        "std_reward": 1.7763568394002505e-15,
+        "ci95": 7.785227104583447e-16,
+        "success_rate": 0.0
+      },
+      "Q_MCTS": {
+        "mean_reward": -1.9784999999999997,
+        "std_reward": 0.11555366718542515,
+        "ci95": 0.05064362755569549,
+        "success_rate": 1.0
+      },
+      "stats_vs_adaptive": {
+        "Classical_Baseline": {
+          "t_stat": -62.13696978572075,
+          "p_val": 2.0514944438153312e-23,
+          "cohens_d": -19.867125285535376
+        },
+        "Fixed_QWM_Baseline": {
+          "t_stat": -46.46508158582784,
+          "p_val": 4.9564925428448694e-21,
+          "cohens_d": -14.012784797773568
+        },
+        "PPO_Q": {
+          "t_stat": 7.7382265641344254,
+          "p_val": 2.737203588354035e-07,
+          "cohens_d": 2.93974880149857
+        },
+        "QLSTM_Reservoir": {
+          "t_stat": -7.116486789190404,
+          "p_val": 9.105446842306751e-07,
+          "cohens_d": -2.250430719234027
+        },
+        "Q_RNN": {
+          "t_stat": 26.63062769293608,
+          "p_val": 1.655284458295789e-16,
+          "cohens_d": 8.421343902963306
+        },
+        "Q_MCTS": {
+          "t_stat": -33.270964406267694,
+          "p_val": 2.6235810810958337e-18,
+          "cohens_d": -11.48747050626665
+        }
+      }
+    },
+    "H4": {
+      "Classical_Baseline": {
+        "mean_reward": 0.2693499999999999,
+        "std_reward": 0.057469361402402955,
+        "ci95": 0.025187058148978026,
+        "success_rate": 1.0
+      },
+      "Fixed_QWM_Baseline": {
+        "mean_reward": 0.09199999999999992,
+        "std_reward": 0.06730527468185533,
+        "ci95": 0.029497837208853114,
+        "success_rate": 0.95
+      },
+      "Adaptive_QWM_Ours": {
+        "mean_reward": -5.05895,
+        "std_reward": 0.4009067815590052,
+        "ci95": 0.1757051439764926,
+        "success_rate": 0.65
+      },
+      "PPO_Q": {
+        "mean_reward": -6.543850000000001,
+        "std_reward": 0.38917030654971596,
+        "ci95": 0.1705614070128409,
+        "success_rate": 0.0
+      },
+      "QLSTM_Reservoir": {
+        "mean_reward": -4.229000000000001,
+        "std_reward": 0.0,
+        "ci95": 0.0,
+        "success_rate": 0.0
+      },
+      "Q_RNN": {
+        "mean_reward": -9.167,
+        "std_reward": 0.0,
+        "ci95": 0.0,
+        "success_rate": 0.0
+      },
+      "Q_MCTS": {
+        "mean_reward": -1.9784999999999997,
+        "std_reward": 0.11555366718542515,
+        "ci95": 0.05064362755569549,
+        "success_rate": 1.0
+      },
+      "stats_vs_adaptive": {
+        "Classical_Baseline": {
+          "t_stat": -56.83958714836513,
+          "p_val": 1.105610858483144e-22,
+          "cohens_d": -18.134483219303995
+        },
+        "Fixed_QWM_Baseline": {
+          "t_stat": -53.38725634301664,
+          "p_val": 3.6106808676053627e-22,
+          "cohens_d": -17.465667626639924
+        },
+        "PPO_Q": {
+          "t_stat": 12.547523721194432,
+          "p_val": 1.2150861549635723e-10,
+          "cohens_d": 3.663292746952363
+        },
+        "QLSTM_Reservoir": {
+          "t_stat": -9.02371410162622,
+          "p_val": 2.6806749164351274e-08,
+          "cohens_d": -2.853548951531898
+        },
+        "Q_RNN": {
+          "t_stat": 44.66518310161532,
+          "p_val": 1.0431606358849442e-20,
+          "cohens_d": 14.124371070956832
+        },
+        "Q_MCTS": {
+          "t_stat": -32.84746798981096,
+          "p_val": 3.333345496460473e-18,
+          "cohens_d": -10.17695609041746
+        }
+      }
+    },
+    "H5": {
+      "Classical_Baseline": {
+        "mean_reward": 0.2693499999999999,
+        "std_reward": 0.057469361402402955,
+        "ci95": 0.025187058148978026,
+        "success_rate": 1.0
+      },
+      "Fixed_QWM_Baseline": {
+        "mean_reward": -1.0030500000000004,
+        "std_reward": 0.21960270376295465,
+        "ci95": 0.09624512843671623,
+        "success_rate": 0.95
+      },
+      "Adaptive_QWM_Ours": {
+        "mean_reward": -5.3641,
+        "std_reward": 0.40785939979360547,
+        "ci95": 0.17875226326735003,
+        "success_rate": 0.8
+      },
+      "PPO_Q": {
+        "mean_reward": -6.539499999999999,
+        "std_reward": 0.3960408438532572,
+        "ci95": 0.1735725527495635,
+        "success_rate": 0.05
+      },
+      "QLSTM_Reservoir": {
+        "mean_reward": -4.631,
+        "std_reward": 0.0,
+        "ci95": 0.0,
+        "success_rate": 0.0
+      },
+      "Q_RNN": {
+        "mean_reward": -9.216000000000003,
+        "std_reward": 1.7763568394002505e-15,
+        "ci95": 7.785227104583447e-16,
+        "success_rate": 0.0
+      },
+      "Q_MCTS": {
+        "mean_reward": -1.9784999999999997,
+        "std_reward": 0.11555366718542515,
+        "ci95": 0.05064362755569549,
+        "success_rate": 1.0
+      },
+      "stats_vs_adaptive": {
+        "Classical_Baseline": {
+          "t_stat": -60.928909666274976,
+          "p_val": 2.973763562783335e-23,
+          "cohens_d": -18.852620711870248
+        },
+        "Fixed_QWM_Baseline": {
+          "t_stat": -40.67478783545578,
+          "p_val": 6.066814232218697e-20,
+          "cohens_d": -12.97713052032347
+        },
+        "PPO_Q": {
+          "t_stat": 10.247273873750974,
+          "p_val": 3.545898169486579e-09,
+          "cohens_d": 2.849891961891084
+        },
+        "QLSTM_Reservoir": {
+          "t_stat": -7.834829397401977,
+          "p_val": 2.2815299484574768e-07,
+          "cohens_d": -2.477590597463475
+        },
+        "Q_RNN": {
+          "t_stat": 41.16625201998732,
+          "p_val": 4.8407777995897246e-20,
+          "cohens_d": 13.017911911566737
+        },
+        "Q_MCTS": {
+          "t_stat": -36.43457325270009,
+          "p_val": 4.790796605830645e-19,
+          "cohens_d": -11.008700680145786
+        }
+      }
+    },
+    "H6": {
+      "Classical_Baseline": {
+        "mean_reward": 0.2693499999999999,
+        "std_reward": 0.057469361402402955,
+        "ci95": 0.025187058148978026,
+        "success_rate": 1.0
+      },
+      "Fixed_QWM_Baseline": {
+        "mean_reward": -0.3217,
+        "std_reward": 0.13210416344688006,
+        "ci95": 0.05789720235728148,
+        "success_rate": 1.0
+      },
+      "Adaptive_QWM_Ours": {
+        "mean_reward": -5.320600000000001,
+        "std_reward": 0.3585941159584189,
+        "ci95": 0.1571608006444355,
+        "success_rate": 0.8
+      },
+      "PPO_Q": {
+        "mean_reward": -6.532349999999999,
+        "std_reward": 0.39278598180179497,
+        "ci95": 0.17214604655989055,
+        "success_rate": 0.0
+      },
+      "QLSTM_Reservoir": {
+        "mean_reward": -4.370000000000002,
+        "std_reward": 8.881784197001252e-16,
+        "ci95": 3.8926135522917237e-16,
+        "success_rate": 0.0
+      },
+      "Q_RNN": {
+        "mean_reward": -9.134000000000004,
+        "std_reward": 1.7763568394002505e-15,
+        "ci95": 7.785227104583447e-16,
+        "success_rate": 0.0
+      },
+      "Q_MCTS": {
+        "mean_reward": -1.9784999999999997,
+        "std_reward": 0.11555366718542515,
+        "ci95": 0.05064362755569549,
+        "success_rate": 1.0
+      },
+      "stats_vs_adaptive": {
+        "Classical_Baseline": {
+          "t_stat": -67.68859331352066,
+          "p_val": 4.064016448164233e-24,
+          "cohens_d": -21.216548142370456
+        },
+        "Fixed_QWM_Baseline": {
+          "t_stat": -56.59297898478812,
+          "p_val": 1.2002742093735148e-22,
+          "cohens_d": -18.03073700154959
+        },
+        "PPO_Q": {
+          "t_stat": 7.977914652810458,
+          "p_val": 1.7461599931985002e-07,
+          "cohens_d": 3.140479392814803
+        },
+        "QLSTM_Reservoir": {
+          "t_stat": -11.555039949986881,
+          "p_val": 4.891314599482087e-10,
+          "cohens_d": -3.6540244696196664
+        },
+        "Q_RNN": {
+          "t_stat": 46.353870550473445,
+          "p_val": 5.185409851877378e-21,
+          "cohens_d": 14.658380930409916
+        },
+        "Q_MCTS": {
+          "t_stat": -39.31143730999384,
+          "p_val": 1.1511576564213367e-19,
+          "cohens_d": -12.227570742966709
+        }
+      }
+    }
+  }
+}

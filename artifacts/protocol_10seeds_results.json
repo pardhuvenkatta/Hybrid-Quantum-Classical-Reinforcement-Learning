@@ -1,0 +1,16 @@
+{
+  "num_seeds": 10,
+  "horizon": 3,
+  "qubits": 6,
+  "candidate_futures": 64,
+  "classical_rewards_mean": -0.1702000000000001,
+  "classical_rewards_std": 0.14622997108816113,
+  "quantum_rewards_mean": -1.4116666666666673,
+  "quantum_rewards_std": 0.1258497340305316,
+  "classical_success_mean": 0.8433333333333335,
+  "quantum_success_mean": 0.08333333333333334,
+  "paired_t_stat": -14.31612987446559,
+  "p_val_t": 1.6906878581051776e-07,
+  "p_val_wilcoxon": 0.001953125,
+  "cohens_d": -8.633267489293448
+}

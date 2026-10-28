@@ -1,0 +1,84 @@
+{
+  "scaling_experiments": {
+    "H2": {
+      "horizon": 2,
+      "qubits": 4,
+      "candidate_futures": 16,
+      "classical_mean_reward": 0.22499999999999992,
+      "classical_std_reward": 0.024999999999999967,
+      "quantum_mean_reward": -1.2000000000000004,
+      "quantum_std_reward": 0.4250000000000005,
+      "classical_success_rate": 1.0,
+      "quantum_success_rate": 1.0,
+      "mean_diff": -1.4250000000000003,
+      "ci_95_low": -7.14279213127862,
+      "ci_95_high": 4.292792131278619,
+      "paired_t_stat": -3.166666666666664,
+      "p_val_uncorrected": 0.19472853748580984,
+      "p_val_wilcoxon": 0.5,
+      "bonferroni_threshold": 0.05,
+      "bonferroni_significant": false,
+      "cohens_d": -3.347155251233807,
+      "classical_mean_steps": 11.25,
+      "quantum_mean_steps": 18.25
+    }
+  },
+  "ablation_experiments_H4": {
+    "Full_QWM": {
+      "config": {
+        "enable_oracle": true,
+        "enable_interference": true
+      },
+      "mean_reward": -0.037500000000000144,
+      "std_reward": 0.3875,
+      "success_rate": 0.75
+    },
+    "No_Oracle": {
+      "config": {
+        "enable_oracle": false,
+        "enable_interference": true
+      },
+      "mean_reward": -6.4125,
+      "std_reward": 1.2625000000000006,
+      "success_rate": 0.25
+    },
+    "No_Interference": {
+      "config": {
+        "enable_oracle": true,
+        "enable_interference": false
+      },
+      "mean_reward": -6.4125,
+      "std_reward": 1.2625000000000006,
+      "success_rate": 0.25
+    },
+    "No_Oracle_No_Interference": {
+      "config": {
+        "enable_oracle": false,
+        "enable_interference": false
+      },
+      "mean_reward": -6.4125,
+      "std_reward": 1.2625000000000006,
+      "success_rate": 0.25
+    }
+  },
+  "learning_curves_H4": {
+    "classical_reward_curve": [
+      0.0,
+      0.0
+    ],
+    "quantum_reward_curve": [
+      0.0,
+      0.0
+    ],
+    "classical_success_curve": [
+      0.0,
+      0.0
+    ],
+    "quantum_success_curve": [
+      0.0,
+      0.0
+    ],
+    "classical_episodes_to_90": 1,
+    "quantum_episodes_to_90": 1
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "num_seeds": 20,
+    "horizons": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "grid_width": 6,
+    "grid_height": 6,
+    "episodes": 50,
+    "shots": 128,
+    "timestamp": "2026-10-28 01:28:09"
+  },
+  "scaling_experiments": {
+    "H2": {
+      "horizon": 2,
+      "qubits": 4,
+      "candidate_futures": 16,
+      "classical_mean_reward": 0.25604999999999994,
+      "classical_std_reward": 0.0610569201647119,
+      "classical_ci95": 0.026759375101074397,
+      "quantum_mean_reward": -1.1446,
+      "quantum_std_reward": 0.17005981300707113,
+      "quantum_ci95": 0.07453199921644393,
+      "classical_success_rate": 0.968,
+      "quantum_success_rate": 0.884,
+      "paired_t_stat": -35.38349773328421,
+      "p_val_t": 8.291087817801015e-19,
+      "p_val_bonferroni": 4.145543908900508e-18,
+      "cohens_d": -10.685041739279606
+    },
+    "H3": {
+      "horizon": 3,
+      "qubits": 6,
+      "candidate_futures": 64,
+      "classical_mean_reward": 0.25604999999999994,
+      "classical_std_reward": 0.0610569201647119,
+      "classical_ci95": 0.026759375101074397,
+      "quantum_mean_reward": -0.9311,
+      "quantum_std_reward": 0.2211105831931163,
+      "quantum_ci95": 0.09690598573462839,
+      "classical_success_rate": 0.968,
+      "quantum_success_rate": 0.9009999999999998,
+      "paired_t_stat": -26.033534088279573,
+      "p_val_t": 2.5190417091633585e-16,
+      "p_val_bonferroni": 1.2595208545816791e-15,
+      "cohens_d": -7.133717379122172
+    },
+    "H4": {
+      "horizon": 4,
+      "qubits": 8,
+      "candidate_futures": 256,
+      "classical_mean_reward": 0.25604999999999994,
+      "classical_std_reward": 0.0610569201647119,
+      "classical_ci95": 0.026759375101074397,
+      "quantum_mean_reward": 0.0961999999999999,
+      "quantum_std_reward": 0.08325298793436788,
+      "quantum_ci95": 0.03648723070883841,
+      "classical_success_rate": 0.968,
+      "quantum_success_rate": 0.9479999999999998,
+      "paired_t_stat": -8.808077300756386,
+      "p_val_t": 3.900464444469955e-08,
+      "p_val_bonferroni": 1.9502322222349777e-07,
+      "cohens_d": -2.134180056489123
+    },
+    "H5": {
+      "horizon": 5,
+      "qubits": 10,
+      "candidate_futures": 1024,
+      "classical_mean_reward": 0.25604999999999994,
+      "classical_std_reward": 0.0610569201647119,
+      "classical_ci95": 0.026759375101074397,
+      "quantum_mean_reward": -0.9346000000000002,
+      "quantum_std_reward": 0.20489860907287785,
+      "quantum_ci95": 0.08980077480289356,
+      "classical_success_rate": 0.968,
+      "quantum_success_rate": 0.9289999999999999,
+      "paired_t_stat": -25.540159540084712,
+      "p_val_t": 3.5887086933524293e-16,
+      "p_val_bonferroni": 1.7943543466762147e-15,
+      "cohens_d": -7.67624300892
+    },
+    "H6": {
+      "horizon": 6,
+      "qubits": 12,
+      "candidate_futures": 4096,
+      "classical_mean_reward": 0.25604999999999994,
+      "classical_std_reward": 0.0610569201647119,
+      "classical_ci95": 0.026759375101074397,
+      "quantum_mean_reward": -0.22090000000000004,
+      "quantum_std_reward": 0.1025918612756392,
+      "quantum_ci95": 0.044962865647109274,
+      "classical_success_rate": 0.968,
+      "quantum_success_rate": 0.9770000000000001,
+      "paired_t_stat": -16.460904227383363,
+      "p_val_t": 1.0618332086776927e-12,
+      "p_val_bonferroni": 5.309166043388463e-12,
+      "cohens_d": -5.506757344671125
+    }
+  },
+  "ablation_experiments_H4": {
+    "Full_QWM": {
+      "config": {
+        "enable_oracle": true,
+        "enable_interference": true
+      },
+      "mean_reward": 0.0961999999999999,
+      "std_reward": 0.08325298793436788,
+      "ci95": 0.03648723070883841,
+      "success_rate": 0.9479999999999998
+    },
+    "No_Oracle": {
+      "config": {
+        "enable_oracle": false,
+        "enable_interference": true
+      },
+      "mean_reward": -6.11145,
+      "std_reward": 0.18981477155374407,
+      "ci95": 0.08318999153624196,
+      "success_rate": 0.051000000000000004
+    },
+    "No_Interference": {
+      "config": {
+        "enable_oracle": true,
+        "enable_interference": false
+      },
+      "mean_reward": -6.11145,
+      "std_reward": 0.18981477155374407,
+      "ci95": 0.08318999153624196,
+      "success_rate": 0.051000000000000004
+    },
+    "No_Oracle_No_Interference": {
+      "config": {
+        "enable_oracle": false,
+        "enable_interference": false
+      },
+      "mean_reward": -6.11145,
+      "std_reward": 0.18981477155374407,
+      "ci95": 0.08318999153624196,
+      "success_rate": 0.051000000000000004
+    }
+  }
+}

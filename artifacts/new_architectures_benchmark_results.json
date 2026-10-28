@@ -1,0 +1,1118 @@
+{
+  "metadata": {
+    "num_seeds": 20,
+    "episodes": 50,
+    "architectures_evaluated": [
+      "Classical_Baseline",
+      "Prev_Best_Hybrid_QBRL",
+      "Q_Counterfactual",
+      "Q_Depth_Adaptive",
+      "Q_MultiAgent",
+      "Q_Causal",
+      "Q_Planner_Classical_Learner",
+      "Q_Attention",
+      "Q_Algorithm_Selection"
+    ],
+    "timestamp": "2026-09-22 16:04:49"
+  },
+  "primary_benchmarks": {
+    "CartPole-v1": {
+      "Classical_Baseline": {
+        "mean_reward": 10.860000000000001,
+        "std_reward": 2.030576272884129,
+        "ci95": 0.8899392896147467,
+        "success_rate": 1.0,
+        "conv_speed": 15.95,
+        "total_qpu_calls": 0.0,
+        "average_shots": 6400.0,
+        "parameter_count": 16,
+        "extra_metrics": {},
+        "stats_vs_classical": {
+          "t_stat": 0.0,
+          "p_val": 1.0,
+          "cohens_d": 0.0
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -5.163119642828422,
+          "p_val": 5.5298412540796274e-05,
+          "cohens_d": -1.7515395403095382
+        }
+      },
+      "Prev_Best_Hybrid_QBRL": {
+        "mean_reward": 21.657999999999998,
+        "std_reward": 10.002103578747823,
+        "ci95": 4.383615169934514,
+        "success_rate": 1.0,
+        "conv_speed": 21.25,
+        "total_qpu_calls": 0.0,
+        "average_shots": 6400.0,
+        "parameter_count": 32,
+        "extra_metrics": {},
+        "stats_vs_classical": {
+          "t_stat": 4.585139723002682,
+          "p_val": 0.00020215107010427012,
+          "cohens_d": 1.4583392202412115
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -0.32410293959530906,
+          "p_val": 0.7494008490003774,
+          "cohens_d": -0.10576157189847675
+        }
+      },
+      "Q_Counterfactual": {
+        "mean_reward": 21.482999999999997,
+        "std_reward": 7.499608723126827,
+        "ci95": 3.286848442274149,
+        "success_rate": 1.0,
+        "conv_speed": 25.45,
+        "total_qpu_calls": 2025.3,
+        "average_shots": 259238.4,
+        "parameter_count": 160,
+        "extra_metrics": {
+          "counterfactual_accuracy": 0.61
+        },
+        "stats_vs_classical": {
+          "t_stat": 5.837116896264404,
+          "p_val": 1.2709151402771205e-05,
+          "cohens_d": 1.8846158989738233
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -0.481404370562236,
+          "p_val": 0.6357269532172419,
+          "cohens_d": -0.14176852527216402
+        }
+      },
+      "Q_Depth_Adaptive": {
+        "mean_reward": 21.671,
+        "std_reward": 1.657509879306908,
+        "ci95": 0.7264357336475128,
+        "success_rate": 1.0,
+        "conv_speed": 18.25,
+        "total_qpu_calls": 1024.1,
+        "average_shots": 128083.2,
+        "parameter_count": 128,
+        "extra_metrics": {
+          "depth_distribution": {
+            "Shallow (L=4)": 33,
+            "Medium (L=8)": 869,
+            "Deep (L=12)": 8
+          }
+        },
+        "stats_vs_classical": {
+          "t_stat": 16.44238512278147,
+          "p_val": 1.0833391368387986e-12,
+          "cohens_d": 5.6852032942028226
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -0.45386626029389904,
+          "p_val": 0.6550667337764972,
+          "cohens_d": -0.15276486138593404
+        }
+      },
+      "Q_MultiAgent": {
+        "mean_reward": 20.979999999999997,
+        "std_reward": 1.7541949720598338,
+        "ci95": 0.76880984384957,
+        "success_rate": 1.0,
+        "conv_speed": 22.85,
+        "total_qpu_calls": 987.7,
+        "average_shots": 126425.6,
+        "parameter_count": 96,
+        "extra_metrics": {
+          "coordination_success_rate": 0.53
+        },
+        "stats_vs_classical": {
+          "t_stat": 16.89147881518114,
+          "p_val": 6.698455123736011e-13,
+          "cohens_d": 5.198496968634264
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -0.7594287343627052,
+          "p_val": 0.4569156731484868,
+          "cohens_d": -0.2553584435033748
+        }
+      },
+      "Q_Causal": {
+        "mean_reward": 20.323,
+        "std_reward": 8.784489228179405,
+        "ci95": 3.849972152117467,
+        "success_rate": 1.0,
+        "conv_speed": 18.5,
+        "total_qpu_calls": 1915.0,
+        "average_shots": 245120.0,
+        "parameter_count": 64,
+        "extra_metrics": {
+          "causal_intervention_accuracy": 0.04933765733759855
+        },
+        "stats_vs_classical": {
+          "t_stat": 4.477684447091879,
+          "p_val": 0.0002579234895901634,
+          "cohens_d": 1.4467242700964482
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -1.0494395694800904,
+          "p_val": 0.3071420106863012,
+          "cohens_d": -0.25865236943810527
+        }
+      },
+      "Q_Planner_Classical_Learner": {
+        "mean_reward": 21.232000000000003,
+        "std_reward": 3.035163257553043,
+        "ci95": 1.3302189478728679,
+        "success_rate": 1.0,
+        "conv_speed": 18.95,
+        "total_qpu_calls": 1111.6,
+        "average_shots": 142284.8,
+        "parameter_count": 32,
+        "extra_metrics": {},
+        "stats_vs_classical": {
+          "t_stat": 11.35726559688398,
+          "p_val": 6.526980824056024e-10,
+          "cohens_d": 3.9150325139454503
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -0.6200197564437884,
+          "p_val": 0.5426101440383156,
+          "cohens_d": -0.21043438337207002
+        }
+      },
+      "Q_Attention": {
+        "mean_reward": 22.695000000000004,
+        "std_reward": 9.089714792005303,
+        "ci95": 3.9837431535178065,
+        "success_rate": 1.0,
+        "conv_speed": 17.6,
+        "total_qpu_calls": 1184.75,
+        "average_shots": 151648.0,
+        "parameter_count": 176,
+        "extra_metrics": {},
+        "stats_vs_classical": {
+          "t_stat": 5.163119642828422,
+          "p_val": 5.5298412540796274e-05,
+          "cohens_d": 1.7515395403095382
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": 0.0,
+          "p_val": 1.0,
+          "cohens_d": 0.0
+        }
+      },
+      "Q_Algorithm_Selection": {
+        "mean_reward": 20.936,
+        "std_reward": 1.5497302991165913,
+        "ci95": 0.6791992499406929,
+        "success_rate": 1.0,
+        "conv_speed": 22.25,
+        "total_qpu_calls": 986.35,
+        "average_shots": 126252.8,
+        "parameter_count": 64,
+        "extra_metrics": {
+          "algorithm_distribution": {
+            "Grover Search": 27,
+            "VQC Optimization": 961,
+            "Amplitude Amplification": 34,
+            "Robust Sampling": 0
+          }
+        },
+        "stats_vs_classical": {
+          "t_stat": 15.680106196741425,
+          "p_val": 2.5167760725051953e-12,
+          "cohens_d": 5.437232399660048
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -0.8627444087614654,
+          "p_val": 0.39903734832128096,
+          "cohens_d": -0.2629483166232415
+        }
+      },
+      "winning_architecture": "Q_Attention"
+    },
+    "Acrobot-v1": {
+      "Classical_Baseline": {
+        "mean_reward": -58.43300000000001,
+        "std_reward": 5.576670243075164,
+        "ci95": 2.4440834953168027,
+        "success_rate": 1.0,
+        "conv_speed": 5.0,
+        "total_qpu_calls": 0.0,
+        "average_shots": 6400.0,
+        "parameter_count": 16,
+        "extra_metrics": {},
+        "stats_vs_classical": {
+          "t_stat": 0.0,
+          "p_val": 1.0,
+          "cohens_d": 0.0
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": 14.261059518270242,
+          "p_val": 1.3338978890636548e-11,
+          "cohens_d": 4.660907096012943
+        }
+      },
+      "Prev_Best_Hybrid_QBRL": {
+        "mean_reward": -159.276,
+        "std_reward": 25.390083576073557,
+        "ci95": 11.127694754778279,
+        "success_rate": 0.9,
+        "conv_speed": 15.8,
+        "total_qpu_calls": 0.0,
+        "average_shots": 6400.0,
+        "parameter_count": 48,
+        "extra_metrics": {},
+        "stats_vs_classical": {
+          "t_stat": -16.05125970082281,
+          "p_val": 1.6623099334912297e-12,
+          "cohens_d": -5.347216058937616
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -0.9843529073479625,
+          "p_val": 0.3373118547888971,
+          "cohens_d": -0.3037903246421202
+        }
+      },
+      "Q_Counterfactual": {
+        "mean_reward": -152.92600000000002,
+        "std_reward": 24.466075369785,
+        "ci95": 10.722730303216622,
+        "success_rate": 1.0,
+        "conv_speed": 18.05,
+        "total_qpu_calls": 20766.0,
+        "average_shots": 2658048.0,
+        "parameter_count": 176,
+        "extra_metrics": {
+          "counterfactual_accuracy": 0.87
+        },
+        "stats_vs_classical": {
+          "t_stat": -15.736270830421926,
+          "p_val": 2.3623843776087968e-12,
+          "cohens_d": -5.190553796557536
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -0.2533393670862059,
+          "p_val": 0.8027269471852575,
+          "cohens_d": -0.06804936877358854
+        }
+      },
+      "Q_Depth_Adaptive": {
+        "mean_reward": -220.919,
+        "std_reward": 22.76794542772799,
+        "ci95": 9.978492042143442,
+        "success_rate": 1.0,
+        "conv_speed": 22.7,
+        "total_qpu_calls": 9983.95,
+        "average_shots": 1270540.8,
+        "parameter_count": 144,
+        "extra_metrics": {
+          "depth_distribution": {
+            "Shallow (L=4)": 199,
+            "Medium (L=8)": 8458,
+            "Deep (L=12)": 32
+          }
+        },
+        "stats_vs_classical": {
+          "t_stat": -31.036959860616577,
+          "p_val": 9.60628611339598e-18,
+          "cohens_d": -9.554706708143895
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -10.579518295540025,
+          "p_val": 2.1079311232826685e-09,
+          "cohens_d": -2.7329702073961237
+        }
+      },
+      "Q_MultiAgent": {
+        "mean_reward": -181.001,
+        "std_reward": 71.12757650166354,
+        "ci95": 31.173034841977124,
+        "success_rate": 0.95,
+        "conv_speed": 10.75,
+        "total_qpu_calls": 8186.35,
+        "average_shots": 1047852.8,
+        "parameter_count": 112,
+        "extra_metrics": {
+          "coordination_success_rate": 0.24
+        },
+        "stats_vs_classical": {
+          "t_stat": -7.637118652258265,
+          "p_val": 3.316316067157922e-07,
+          "cohens_d": -2.368018754538984
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -1.8702204533350995,
+          "p_val": 0.07694071799261333,
+          "cohens_d": -0.5415440209530062
+        }
+      },
+      "Q_Causal": {
+        "mean_reward": -151.133,
+        "std_reward": 26.841674519299275,
+        "ci95": 11.763882535595124,
+        "success_rate": 0.95,
+        "conv_speed": 15.45,
+        "total_qpu_calls": 20513.7,
+        "average_shots": 2625753.6,
+        "parameter_count": 96,
+        "extra_metrics": {
+          "causal_intervention_accuracy": 0.2763075469860906
+        },
+        "stats_vs_classical": {
+          "t_stat": -14.261059518270242,
+          "p_val": 1.3338978890636548e-11,
+          "cohens_d": -4.660907096012943
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": 0.0,
+          "p_val": 1.0,
+          "cohens_d": 0.0
+        }
+      },
+      "Q_Planner_Classical_Learner": {
+        "mean_reward": -187.78900000000002,
+        "std_reward": 92.21195876349228,
+        "ci95": 40.41367279418093,
+        "success_rate": 0.9,
+        "conv_speed": 15.4,
+        "total_qpu_calls": 9434.35,
+        "average_shots": 1207596.8,
+        "parameter_count": 48,
+        "extra_metrics": {},
+        "stats_vs_classical": {
+          "t_stat": -6.080478194806612,
+          "p_val": 7.572231116498334e-06,
+          "cohens_d": -1.9301158619372611
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -1.757903006084511,
+          "p_val": 0.09486373435303799,
+          "cohens_d": -0.5261063042058304
+        }
+      },
+      "Q_Attention": {
+        "mean_reward": -227.49100000000004,
+        "std_reward": 35.20492947017505,
+        "ci95": 15.429240625925825,
+        "success_rate": 0.95,
+        "conv_speed": 28.15,
+        "total_qpu_calls": 11419.55,
+        "average_shots": 1461702.4,
+        "parameter_count": 200,
+        "extra_metrics": {},
+        "stats_vs_classical": {
+          "t_stat": -20.880727920454657,
+          "p_val": 1.452861491947668e-14,
+          "cohens_d": -6.537738304704267
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -8.464473055375064,
+          "p_val": 7.175961387386352e-08,
+          "cohens_d": -2.3774891189983136
+        }
+      },
+      "Q_Algorithm_Selection": {
+        "mean_reward": -223.23899999999998,
+        "std_reward": 18.84228274387156,
+        "ci95": 8.257994513047342,
+        "success_rate": 0.9,
+        "conv_speed": 21.75,
+        "total_qpu_calls": 10087.2,
+        "average_shots": 1291161.6,
+        "parameter_count": 80,
+        "extra_metrics": {
+          "algorithm_distribution": {
+            "Grover Search": 53,
+            "VQC Optimization": 10485,
+            "Amplitude Amplification": 239,
+            "Robust Sampling": 0
+          }
+        },
+        "stats_vs_classical": {
+          "t_stat": -36.43218652481582,
+          "p_val": 4.796683072512974e-19,
+          "cohens_d": -11.560658102881067
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -10.504281611183425,
+          "p_val": 2.3689334811998253e-09,
+          "cohens_d": -3.0306903197889046
+        }
+      },
+      "winning_architecture": "Classical_Baseline"
+    },
+    "FrozenLake-v1": {
+      "Classical_Baseline": {
+        "mean_reward": -0.0765400000000003,
+        "std_reward": 0.09868363795483014,
+        "ci95": 0.04325001125585979,
+        "success_rate": 1.0,
+        "conv_speed": 15.25,
+        "total_qpu_calls": 0.0,
+        "average_shots": 6400.0,
+        "parameter_count": 16,
+        "extra_metrics": {},
+        "stats_vs_classical": {
+          "t_stat": 0.0,
+          "p_val": 1.0,
+          "cohens_d": 0.0
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": 11.66831198693012,
+          "p_val": 4.153411008127548e-10,
+          "cohens_d": 3.5663205407401333
+        }
+      },
+      "Prev_Best_Hybrid_QBRL": {
+        "mean_reward": -0.6619799999999999,
+        "std_reward": 0.27048747771384885,
+        "ci95": 0.11854636389720258,
+        "success_rate": 0.95,
+        "conv_speed": 20.85,
+        "total_qpu_calls": 0.0,
+        "average_shots": 6400.0,
+        "parameter_count": 64,
+        "extra_metrics": {},
+        "stats_vs_classical": {
+          "t_stat": -9.24694472063973,
+          "p_val": 1.8291569494908196e-08,
+          "cohens_d": -2.802701566547653
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -0.2605004926150421,
+          "p_val": 0.7972800771648381,
+          "cohens_d": -0.08494300598370391
+        }
+      },
+      "Q_Counterfactual": {
+        "mean_reward": -0.6581399999999998,
+        "std_reward": 0.17091971331593078,
+        "ci95": 0.07490886714316265,
+        "success_rate": 1.0,
+        "conv_speed": 24.85,
+        "total_qpu_calls": 8722.8,
+        "average_shots": 1116518.4,
+        "parameter_count": 192,
+        "extra_metrics": {
+          "counterfactual_accuracy": 0.73
+        },
+        "stats_vs_classical": {
+          "t_stat": -13.97495445647129,
+          "p_val": 1.898808250390264e-11,
+          "cohens_d": -4.061965856013481
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -0.348818060175137,
+          "p_val": 0.7310615959352794,
+          "cohens_d": -0.0888346298174566
+        }
+      },
+      "Q_Depth_Adaptive": {
+        "mean_reward": -1.5140999999999993,
+        "std_reward": 0.2178310492101617,
+        "ci95": 0.09546866659422859,
+        "success_rate": 0.65,
+        "conv_speed": 23.8,
+        "total_qpu_calls": 2970.45,
+        "average_shots": 318028.8,
+        "parameter_count": 160,
+        "extra_metrics": {
+          "depth_distribution": {
+            "Shallow (L=4)": 1164,
+            "Medium (L=8)": 1864,
+            "Deep (L=12)": 28
+          }
+        },
+        "stats_vs_classical": {
+          "t_stat": -25.006472912993104,
+          "p_val": 5.301454453129529e-16,
+          "cohens_d": -8.28604310842099
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -10.90620185334399,
+          "p_val": 1.2785798126800742e-09,
+          "cohens_d": -4.116573936311959
+        }
+      },
+      "Q_MultiAgent": {
+        "mean_reward": -3.274609999999998,
+        "std_reward": 0.8657661773827839,
+        "ci95": 0.37943875694861695,
+        "success_rate": 0.05,
+        "conv_speed": 14.65,
+        "total_qpu_calls": 3869.3,
+        "average_shots": 495270.4,
+        "parameter_count": 128,
+        "extra_metrics": {
+          "coordination_success_rate": 0.17
+        },
+        "stats_vs_classical": {
+          "t_stat": -16.096676722807675,
+          "p_val": 1.5809515846745442e-12,
+          "cohens_d": -5.058957827008856
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -13.665661937848903,
+          "p_val": 2.80048825134545e-11,
+          "cohens_d": -4.090109015606456
+        }
+      },
+      "Q_Causal": {
+        "mean_reward": -0.6414399999999998,
+        "std_reward": 0.19476326758400808,
+        "ci95": 0.08535876554421336,
+        "success_rate": 1.0,
+        "conv_speed": 22.55,
+        "total_qpu_calls": 8694.8,
+        "average_shots": 1112934.4,
+        "parameter_count": 128,
+        "extra_metrics": {
+          "causal_intervention_accuracy": 0.21753018347676986
+        },
+        "stats_vs_classical": {
+          "t_stat": -11.66831198693012,
+          "p_val": 4.153411008127548e-10,
+          "cohens_d": -3.5663205407401333
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": 0.0,
+          "p_val": 1.0,
+          "cohens_d": 0.0
+        }
+      },
+      "Q_Planner_Classical_Learner": {
+        "mean_reward": -1.4934899999999995,
+        "std_reward": 0.1770115191166946,
+        "ci95": 0.0775787187509048,
+        "success_rate": 0.8,
+        "conv_speed": 22.0,
+        "total_qpu_calls": 3333.2,
+        "average_shots": 426649.6,
+        "parameter_count": 64,
+        "extra_metrics": {},
+        "stats_vs_classical": {
+          "t_stat": -41.220804627819554,
+          "p_val": 4.721747931464849e-20,
+          "cohens_d": -9.637421228633473
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -15.361706424468567,
+          "p_val": 3.6168802895412216e-12,
+          "cohens_d": -4.462543144482691
+        }
+      },
+      "Q_Attention": {
+        "mean_reward": -1.4895799999999992,
+        "std_reward": 0.2276040324774584,
+        "ci95": 0.09975186536024269,
+        "success_rate": 0.85,
+        "conv_speed": 18.4,
+        "total_qpu_calls": 3291.65,
+        "average_shots": 421331.2,
+        "parameter_count": 224,
+        "extra_metrics": {},
+        "stats_vs_classical": {
+          "t_stat": -29.808971183200477,
+          "p_val": 2.038359637400594e-17,
+          "cohens_d": -7.851366595112447
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -10.805390069446835,
+          "p_val": 1.490105731603055e-09,
+          "cohens_d": -3.902655389268308
+        }
+      },
+      "Q_Algorithm_Selection": {
+        "mean_reward": -1.6042899999999993,
+        "std_reward": 0.23700992785113434,
+        "ci95": 0.10387418076342157,
+        "success_rate": 0.5,
+        "conv_speed": 24.7,
+        "total_qpu_calls": 3070.8,
+        "average_shots": 393062.4,
+        "parameter_count": 96,
+        "extra_metrics": {
+          "algorithm_distribution": {
+            "Grover Search": 39,
+            "VQC Optimization": 2841,
+            "Amplitude Amplification": 0,
+            "Robust Sampling": 0
+          }
+        },
+        "stats_vs_classical": {
+          "t_stat": -25.561219509772645,
+          "p_val": 3.5344357997137636e-16,
+          "cohens_d": -8.202501152299222
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -12.369539789420367,
+          "p_val": 1.5496760907340452e-10,
+          "cohens_d": -4.326391049606288
+        }
+      },
+      "winning_architecture": "Classical_Baseline"
+    },
+    "Maze-8x8": {
+      "Classical_Baseline": {
+        "mean_reward": 0.2284499999999999,
+        "std_reward": 0.06529967457805591,
+        "ci95": 0.02861884420796899,
+        "success_rate": 1.0,
+        "conv_speed": 2.05,
+        "total_qpu_calls": 0.0,
+        "average_shots": 6400.0,
+        "parameter_count": 16,
+        "extra_metrics": {},
+        "stats_vs_classical": {
+          "t_stat": 0.0,
+          "p_val": 1.0,
+          "cohens_d": 0.0
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": 56.497566340501805,
+          "p_val": 1.2391549448807693e-22,
+          "cohens_d": 16.898985131613728
+        }
+      },
+      "Prev_Best_Hybrid_QBRL": {
+        "mean_reward": -2.325899999999999,
+        "std_reward": 0.1978542140061716,
+        "ci95": 0.08671343254190778,
+        "success_rate": 1.0,
+        "conv_speed": 31.7,
+        "total_qpu_calls": 0.0,
+        "average_shots": 6400.0,
+        "parameter_count": 144,
+        "extra_metrics": {},
+        "stats_vs_classical": {
+          "t_stat": -56.497566340501805,
+          "p_val": 1.2391549448807693e-22,
+          "cohens_d": -16.898985131613728
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": 0.0,
+          "p_val": 1.0,
+          "cohens_d": 0.0
+        }
+      },
+      "Q_Counterfactual": {
+        "mean_reward": -5.046099999999997,
+        "std_reward": 0.3310107097965259,
+        "ci95": 0.14507183988355554,
+        "success_rate": 1.0,
+        "conv_speed": 39.35,
+        "total_qpu_calls": 5765.2,
+        "average_shots": 737945.6,
+        "parameter_count": 272,
+        "extra_metrics": {
+          "counterfactual_accuracy": 0.83
+        },
+        "stats_vs_classical": {
+          "t_stat": -62.575536658832895,
+          "p_val": 1.795987827162818e-23,
+          "cohens_d": -21.549131360976588
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -28.775985280362264,
+          "p_val": 3.929089197379506e-17,
+          "cohens_d": -9.7230194458605
+        }
+      },
+      "Q_Depth_Adaptive": {
+        "mean_reward": -21.008399999999995,
+        "std_reward": 1.3882832708060695,
+        "ci95": 0.6084419700474316,
+        "success_rate": 0.55,
+        "conv_speed": 31.6,
+        "total_qpu_calls": 3715.15,
+        "average_shots": 333590.4,
+        "parameter_count": 240,
+        "extra_metrics": {
+          "depth_distribution": {
+            "Shallow (L=4)": 2378,
+            "Medium (L=8)": 1186,
+            "Deep (L=12)": 82
+          }
+        },
+        "stats_vs_classical": {
+          "t_stat": -66.56211262772864,
+          "p_val": 5.583172158029234e-24,
+          "cohens_d": -21.06245165495378
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -59.3390791371944,
+          "p_val": 4.9021832830723084e-23,
+          "cohens_d": -18.364004291938627
+        }
+      },
+      "Q_MultiAgent": {
+        "mean_reward": -39.283100000000026,
+        "std_reward": 8.552364806882375,
+        "ci95": 3.7482391390069068,
+        "success_rate": 0.15,
+        "conv_speed": 15.0,
+        "total_qpu_calls": 4395.0,
+        "average_shots": 562560.0,
+        "parameter_count": 208,
+        "extra_metrics": {
+          "coordination_success_rate": 0.47
+        },
+        "stats_vs_classical": {
+          "t_stat": -20.1531106074178,
+          "p_val": 2.7723361454149828e-14,
+          "cohens_d": -6.367984402164713
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -18.92682715642219,
+          "p_val": 8.658449802574138e-14,
+          "cohens_d": -5.954886061757465
+        }
+      },
+      "Q_Causal": {
+        "mean_reward": -5.992249999999999,
+        "std_reward": 0.2067210378747163,
+        "ci95": 0.09059948944116615,
+        "success_rate": 1.0,
+        "conv_speed": 41.8,
+        "total_qpu_calls": 6292.4,
+        "average_shots": 805427.2,
+        "parameter_count": 288,
+        "extra_metrics": {
+          "causal_intervention_accuracy": 0.2808304145686997
+        },
+        "stats_vs_classical": {
+          "t_stat": -122.63010836676611,
+          "p_val": 5.208397981888702e-29,
+          "cohens_d": -39.552874927854425
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -47.562119291151774,
+          "p_val": 3.1928790533802206e-21,
+          "cohens_d": -17.66127813251567
+        }
+      },
+      "Q_Planner_Classical_Learner": {
+        "mean_reward": -17.785949999999996,
+        "std_reward": 0.8252747103237801,
+        "ci95": 0.36169258906950225,
+        "success_rate": 0.8,
+        "conv_speed": 29.5,
+        "total_qpu_calls": 3802.05,
+        "average_shots": 486662.4,
+        "parameter_count": 144,
+        "extra_metrics": {},
+        "stats_vs_classical": {
+          "t_stat": -94.86914666147814,
+          "p_val": 6.781869134049337e-27,
+          "cohens_d": -29.994581257456694
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -81.40367623404863,
+          "p_val": 1.234593626037162e-25,
+          "cohens_d": -25.110404444400725
+        }
+      },
+      "Q_Attention": {
+        "mean_reward": -18.215499999999995,
+        "std_reward": 1.4223901539310515,
+        "ci95": 0.6233899706443792,
+        "success_rate": 0.8,
+        "conv_speed": 30.65,
+        "total_qpu_calls": 3720.95,
+        "average_shots": 476281.6,
+        "parameter_count": 464,
+        "extra_metrics": {},
+        "stats_vs_classical": {
+          "t_stat": -57.17184593039052,
+          "p_val": 9.903161455067041e-23,
+          "cohens_d": -17.854793233120482
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -52.467672904774886,
+          "p_val": 5.012325842689119e-22,
+          "cohens_d": -15.251397074888548
+        }
+      },
+      "Q_Algorithm_Selection": {
+        "mean_reward": -22.8586,
+        "std_reward": 1.0951878103777455,
+        "ci95": 0.4799872208582225,
+        "success_rate": 0.45,
+        "conv_speed": 18.55,
+        "total_qpu_calls": 3868.2,
+        "average_shots": 495129.6,
+        "parameter_count": 176,
+        "extra_metrics": {
+          "algorithm_distribution": {
+            "Grover Search": 114,
+            "VQC Optimization": 3618,
+            "Amplitude Amplification": 0,
+            "Robust Sampling": 0
+          }
+        },
+        "stats_vs_classical": {
+          "t_stat": -92.62633875961595,
+          "p_val": 1.067488326818502e-26,
+          "cohens_d": -29.005879858938922
+        },
+        "stats_vs_best_hybrid": {
+          "t_stat": -84.08336998267822,
+          "p_val": 6.683023883999215e-26,
+          "cohens_d": -25.430820337457497
+        }
+      },
+      "winning_architecture": "Classical_Baseline"
+    }
+  },
+  "noise_robustness": {
+    "Noise-Free": {
+      "Classical_Baseline": {
+        "mean_reward": 0.2693499999999999,
+        "std_reward": 0.057469361402402955,
+        "success_rate": 1.0,
+        "cohens_d_vs_classical": 0.0,
+        "p_val_vs_classical": 1.0
+      },
+      "Prev_Best_Hybrid_QBRL": {
+        "mean_reward": -1.9732499999999997,
+        "std_reward": 0.24388847348737086,
+        "success_rate": 0.8,
+        "cohens_d_vs_classical": -12.33681460054391,
+        "p_val_vs_classical": 5.345741572042374e-20
+      },
+      "Q_Counterfactual": {
+        "mean_reward": -3.9689,
+        "std_reward": 0.23392282915525786,
+        "success_rate": 0.75,
+        "cohens_d_vs_classical": -24.252957896497236,
+        "p_val_vs_classical": 9.79645331927417e-25
+      },
+      "Q_Depth_Adaptive": {
+        "mean_reward": -6.425099999999999,
+        "std_reward": 0.39024209152781014,
+        "success_rate": 0.0,
+        "cohens_d_vs_classical": -23.39368322787144,
+        "p_val_vs_classical": 4.5976272020129825e-25
+      },
+      "Q_MultiAgent": {
+        "mean_reward": -9.069950000000002,
+        "std_reward": 1.191837466897228,
+        "success_rate": 0.0,
+        "cohens_d_vs_classical": -10.788716800560573,
+        "p_val_vs_classical": 1.4242016412187205e-18
+      },
+      "Q_Causal": {
+        "mean_reward": -4.8203499999999995,
+        "std_reward": 0.12525944076196405,
+        "success_rate": 0.65,
+        "cohens_d_vs_classical": -50.90684070759184,
+        "p_val_vs_classical": 7.585719937384827e-31
+      },
+      "Q_Planner_Classical_Learner": {
+        "mean_reward": -6.2204,
+        "std_reward": 0.24428557059310738,
+        "success_rate": 0.1,
+        "cohens_d_vs_classical": -35.64591422844618,
+        "p_val_vs_classical": 8.970473834790892e-28
+      },
+      "Q_Attention": {
+        "mean_reward": -6.444099999999999,
+        "std_reward": 0.252632519680266,
+        "success_rate": 0.1,
+        "cohens_d_vs_classical": -35.71720297488699,
+        "p_val_vs_classical": 2.2977480794631032e-28
+      },
+      "Q_Algorithm_Selection": {
+        "mean_reward": -6.51015,
+        "std_reward": 0.36062518977464647,
+        "success_rate": 0.05,
+        "cohens_d_vs_classical": -25.59013960499643,
+        "p_val_vs_classical": 9.92295012429348e-26
+      }
+    },
+    "Depolarizing_p0.005": {
+      "Classical_Baseline": {
+        "mean_reward": 0.2693499999999999,
+        "std_reward": 0.057469361402402955,
+        "success_rate": 1.0,
+        "cohens_d_vs_classical": 0.0,
+        "p_val_vs_classical": 1.0
+      },
+      "Prev_Best_Hybrid_QBRL": {
+        "mean_reward": -1.9732499999999997,
+        "std_reward": 0.24388847348737086,
+        "success_rate": 0.8,
+        "cohens_d_vs_classical": -12.33681460054391,
+        "p_val_vs_classical": 5.345741572042374e-20
+      },
+      "Q_Counterfactual": {
+        "mean_reward": -3.9689,
+        "std_reward": 0.23392282915525786,
+        "success_rate": 0.75,
+        "cohens_d_vs_classical": -24.252957896497236,
+        "p_val_vs_classical": 9.79645331927417e-25
+      },
+      "Q_Depth_Adaptive": {
+        "mean_reward": -6.425099999999999,
+        "std_reward": 0.39024209152781014,
+        "success_rate": 0.0,
+        "cohens_d_vs_classical": -23.39368322787144,
+        "p_val_vs_classical": 4.5976272020129825e-25
+      },
+      "Q_MultiAgent": {
+        "mean_reward": -9.069950000000002,
+        "std_reward": 1.191837466897228,
+        "success_rate": 0.0,
+        "cohens_d_vs_classical": -10.788716800560573,
+        "p_val_vs_classical": 1.4242016412187205e-18
+      },
+      "Q_Causal": {
+        "mean_reward": -4.8203499999999995,
+        "std_reward": 0.12525944076196405,
+        "success_rate": 0.65,
+        "cohens_d_vs_classical": -50.90684070759184,
+        "p_val_vs_classical": 7.585719937384827e-31
+      },
+      "Q_Planner_Classical_Learner": {
+        "mean_reward": -6.2204,
+        "std_reward": 0.24428557059310738,
+        "success_rate": 0.1,
+        "cohens_d_vs_classical": -35.64591422844618,
+        "p_val_vs_classical": 8.970473834790892e-28
+      },
+      "Q_Attention": {
+        "mean_reward": -6.444099999999999,
+        "std_reward": 0.252632519680266,
+        "success_rate": 0.1,
+        "cohens_d_vs_classical": -35.71720297488699,
+        "p_val_vs_classical": 2.2977480794631032e-28
+      },
+      "Q_Algorithm_Selection": {
+        "mean_reward": -6.51015,
+        "std_reward": 0.36062518977464647,
+        "success_rate": 0.05,
+        "cohens_d_vs_classical": -25.59013960499643,
+        "p_val_vs_classical": 9.92295012429348e-26
+      }
+    },
+    "Combined_NISQ_Noise": {
+      "Classical_Baseline": {
+        "mean_reward": 0.2693499999999999,
+        "std_reward": 0.057469361402402955,
+        "success_rate": 1.0,
+        "cohens_d_vs_classical": 0.0,
+        "p_val_vs_classical": 1.0
+      },
+      "Prev_Best_Hybrid_QBRL": {
+        "mean_reward": -1.9732499999999997,
+        "std_reward": 0.24388847348737086,
+        "success_rate": 0.8,
+        "cohens_d_vs_classical": -12.33681460054391,
+        "p_val_vs_classical": 5.345741572042374e-20
+      },
+      "Q_Counterfactual": {
+        "mean_reward": -3.9689,
+        "std_reward": 0.23392282915525786,
+        "success_rate": 0.75,
+        "cohens_d_vs_classical": -24.252957896497236,
+        "p_val_vs_classical": 9.79645331927417e-25
+      },
+      "Q_Depth_Adaptive": {
+        "mean_reward": -6.425099999999999,
+        "std_reward": 0.39024209152781014,
+        "success_rate": 0.0,
+        "cohens_d_vs_classical": -23.39368322787144,
+        "p_val_vs_classical": 4.5976272020129825e-25
+      },
+      "Q_MultiAgent": {
+        "mean_reward": -9.069950000000002,
+        "std_reward": 1.191837466897228,
+        "success_rate": 0.0,
+        "cohens_d_vs_classical": -10.788716800560573,
+        "p_val_vs_classical": 1.4242016412187205e-18
+      },
+      "Q_Causal": {
+        "mean_reward": -4.8203499999999995,
+        "std_reward": 0.12525944076196405,
+        "success_rate": 0.65,
+        "cohens_d_vs_classical": -50.90684070759184,
+        "p_val_vs_classical": 7.585719937384827e-31
+      },
+      "Q_Planner_Classical_Learner": {
+        "mean_reward": -6.2204,
+        "std_reward": 0.24428557059310738,
+        "success_rate": 0.1,
+        "cohens_d_vs_classical": -35.64591422844618,
+        "p_val_vs_classical": 8.970473834790892e-28
+      },
+      "Q_Attention": {
+        "mean_reward": -6.444099999999999,
+        "std_reward": 0.252632519680266,
+        "success_rate": 0.1,
+        "cohens_d_vs_classical": -35.71720297488699,
+        "p_val_vs_classical": 2.2977480794631032e-28
+      },
+      "Q_Algorithm_Selection": {
+        "mean_reward": -6.51015,
+        "std_reward": 0.36062518977464647,
+        "success_rate": 0.05,
+        "cohens_d_vs_classical": -25.59013960499643,
+        "p_val_vs_classical": 9.92295012429348e-26
+      }
+    }
+  },
+  "maze_size_scaling": {
+    "4x4": {
+      "Classical_Baseline": 0.55045,
+      "Prev_Best_Hybrid_QBRL": 0.08810000000000001,
+      "Q_Counterfactual": -0.5630999999999999,
+      "Q_Depth_Adaptive": -8.210999999999997,
+      "Q_MultiAgent": -18.941200000000016,
+      "Q_Causal": -0.8141,
+      "Q_Planner_Classical_Learner": -6.916499999999997,
+      "Q_Attention": -5.624799999999999,
+      "Q_Algorithm_Selection": -11.129049999999996
+    },
+    "5x5": {
+      "Classical_Baseline": 0.37194999999999995,
+      "Prev_Best_Hybrid_QBRL": -1.2321499999999999,
+      "Q_Counterfactual": -2.9394999999999993,
+      "Q_Depth_Adaptive": -17.537100000000002,
+      "Q_MultiAgent": -32.27320000000002,
+      "Q_Causal": -3.6830999999999987,
+      "Q_Planner_Classical_Learner": -15.381149999999996,
+      "Q_Attention": -14.892199999999999,
+      "Q_Algorithm_Selection": -21.1291
+    },
+    "8x8": {
+      "Classical_Baseline": -0.07225000000000022,
+      "Prev_Best_Hybrid_QBRL": -5.392549999999998,
+      "Q_Counterfactual": -10.115549999999995,
+      "Q_Depth_Adaptive": -23.57805,
+      "Q_MultiAgent": -37.95090000000003,
+      "Q_Causal": -12.695499999999996,
+      "Q_Planner_Classical_Learner": -21.976049999999997,
+      "Q_Attention": -22.83895,
+      "Q_Algorithm_Selection": -24.4968
+    },
+    "11x11": {
+      "Classical_Baseline": -0.5247000000000004,
+      "Prev_Best_Hybrid_QBRL": -12.301449999999997,
+      "Q_Counterfactual": -17.300099999999993,
+      "Q_Depth_Adaptive": -24.249550000000006,
+      "Q_MultiAgent": -37.27890000000002,
+      "Q_Causal": -19.377749999999995,
+      "Q_Planner_Classical_Learner": -22.9831,
+      "Q_Attention": -23.706049999999998,
+      "Q_Algorithm_Selection": -25.161150000000003
+    },
+    "16x16": {
+      "Classical_Baseline": -1.2154500000000001,
+      "Prev_Best_Hybrid_QBRL": -16.399149999999995,
+      "Q_Counterfactual": -18.750349999999994,
+      "Q_Depth_Adaptive": -24.1836,
+      "Q_MultiAgent": -36.66850000000002,
+      "Q_Causal": -19.628949999999996,
+      "Q_Planner_Classical_Learner": -22.86665,
+      "Q_Attention": -23.4912,
+      "Q_Algorithm_Selection": -25.058
+    }
+  }
+}

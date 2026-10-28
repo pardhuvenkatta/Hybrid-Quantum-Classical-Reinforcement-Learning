@@ -1,0 +1,212 @@
+{
+  "metadata": {
+    "num_seeds": 2,
+    "episodes": 10,
+    "models_evaluated": [
+      "1_Model_Free_Q_Learning",
+      "2_Classical_World_Model",
+      "3_Quantum_Only_World_Model",
+      "4_Proposed_Hybrid_HQWM",
+      "5_Two_Classical_Ensemble",
+      "6_Capacity_Matched_Classical",
+      "7_Untrained_Quantum_Control",
+      "8_Exact_Transition_Reference"
+    ],
+    "grid_size": "4x4",
+    "slip_prob": 0.1,
+    "timestamp": "2026-10-05 11:54:21"
+  },
+  "models": {
+    "1_Model_Free_Q_Learning": {
+      "mean_return": 6.98,
+      "std_return": 0.21999999999999975,
+      "ci95_return": 0.0964192511897908,
+      "success_rate": 0.9,
+      "mean_nll": 0.5,
+      "wall_clock_time": 0.003622770309448242,
+      "model_queries": 0.0,
+      "circuit_executions": 0.0,
+      "total_shots": 0.0,
+      "parameter_count": 64,
+      "stats_vs_classical": {
+        "t_stat": 79.66666666666718,
+        "p_val": 0.007990623517167452,
+        "cohens_d": 17.571629468042016
+      }
+    },
+    "2_Classical_World_Model": {
+      "mean_return": 2.2,
+      "std_return": 0.16000000000000014,
+      "ci95_return": 0.07012309177439346,
+      "success_rate": 0.6,
+      "mean_nll": 2.7713663517691454,
+      "wall_clock_time": 3.1836479902267456,
+      "model_queries": 24704.0,
+      "circuit_executions": 0.0,
+      "total_shots": 0.0,
+      "parameter_count": 688,
+      "stats_vs_classical": {
+        "t_stat": 0.0,
+        "p_val": 1.0,
+        "cohens_d": 0.0
+      }
+    },
+    "3_Quantum_Only_World_Model": {
+      "mean_return": -3.0999999999999988,
+      "std_return": 0.6599999999999999,
+      "ci95_return": 0.2892577535693727,
+      "success_rate": 0.15000000000000002,
+      "mean_nll": 3.0730708047460285,
+      "wall_clock_time": 14.330904245376587,
+      "model_queries": 29536.0,
+      "circuit_executions": 59488.0,
+      "total_shots": 7614464.0,
+      "parameter_count": 24,
+      "stats_vs_classical": {
+        "t_stat": -6.463414634146338,
+        "p_val": 0.09772107739381493,
+        "cohens_d": -7.804250848712324
+      }
+    },
+    "4_Proposed_Hybrid_HQWM": {
+      "mean_return": -2.1549999999999994,
+      "std_return": 0.345,
+      "ci95_return": 0.15120291663853577,
+      "success_rate": 0.25,
+      "mean_nll": 2.818689499102997,
+      "wall_clock_time": 16.438135504722595,
+      "model_queries": 29952.0,
+      "circuit_executions": 59566.5,
+      "total_shots": 7624512.0,
+      "parameter_count": 713,
+      "stats_vs_classical": {
+        "t_stat": -23.540540540540587,
+        "p_val": 0.02702729996876107,
+        "cohens_d": -11.451608002490156
+      }
+    },
+    "5_Two_Classical_Ensemble": {
+      "mean_return": 3.58,
+      "std_return": 0.20999999999999996,
+      "ci95_return": 0.09203655795389132,
+      "success_rate": 0.7,
+      "mean_nll": 2.7713663517691454,
+      "wall_clock_time": 3.254500389099121,
+      "model_queries": 22336.0,
+      "circuit_executions": 0.0,
+      "total_shots": 0.0,
+      "parameter_count": 1376,
+      "stats_vs_classical": {
+        "t_stat": 3.7297297297297285,
+        "p_val": 0.1667657075184299,
+        "cohens_d": 5.227122731642132
+      }
+    },
+    "6_Capacity_Matched_Classical": {
+      "mean_return": 2.965,
+      "std_return": 0.565,
+      "ci95_return": 0.2476221678283267,
+      "success_rate": 0.6499999999999999,
+      "mean_nll": 2.773706329639853,
+      "wall_clock_time": 3.044633626937866,
+      "model_queries": 23040.0,
+      "circuit_executions": 0.0,
+      "total_shots": 0.0,
+      "parameter_count": 1360,
+      "stats_vs_classical": {
+        "t_stat": 1.055172413793103,
+        "p_val": 0.4829136401700286,
+        "cohens_d": 1.3027529423260629
+      }
+    },
+    "7_Untrained_Quantum_Control": {
+      "mean_return": -2.1549999999999994,
+      "std_return": 0.345,
+      "ci95_return": 0.15120291663853577,
+      "success_rate": 0.25,
+      "mean_nll": 0.5,
+      "wall_clock_time": 15.95159661769867,
+      "model_queries": 29952.0,
+      "circuit_executions": 59645.0,
+      "total_shots": 7634560.0,
+      "parameter_count": 712,
+      "stats_vs_classical": {
+        "t_stat": -23.540540540540587,
+        "p_val": 0.02702729996876107,
+        "cohens_d": -11.451608002490156
+      }
+    },
+    "8_Exact_Transition_Reference": {
+      "mean_return": 7.879999999999999,
+      "std_return": 0.7599999999999998,
+      "ci95_return": 0.33308468592836854,
+      "success_rate": 0.95,
+      "mean_nll": 0.5,
+      "wall_clock_time": 1.3494571447372437,
+      "model_queries": 10976.0,
+      "circuit_executions": 0.0,
+      "total_shots": 0.0,
+      "parameter_count": 0,
+      "stats_vs_classical": {
+        "t_stat": 6.17391304347826,
+        "p_val": 0.10222667187855938,
+        "cohens_d": 7.3133720772693875
+      }
+    }
+  },
+  "alpha_star_evolution": [],
+  "robustness_slip_prob": {
+    "p_0.05": {
+      "1_Model_Free_Q_Learning": 1.7588000000000004,
+      "2_Classical_World_Model": 1.7588000000000004,
+      "4_Proposed_Hybrid_HQWM": 1.7588000000000004,
+      "5_Two_Classical_Ensemble": 1.7588000000000004
+    },
+    "p_0.1": {
+      "1_Model_Free_Q_Learning": 1.3084000000000005,
+      "2_Classical_World_Model": 1.3084000000000005,
+      "4_Proposed_Hybrid_HQWM": 1.3084000000000005,
+      "5_Two_Classical_Ensemble": 1.3084000000000005
+    },
+    "p_0.2": {
+      "1_Model_Free_Q_Learning": 1.6124000000000005,
+      "2_Classical_World_Model": 1.6124000000000005,
+      "4_Proposed_Hybrid_HQWM": 1.6124000000000005,
+      "5_Two_Classical_Ensemble": 1.6124000000000005
+    },
+    "p_0.3": {
+      "1_Model_Free_Q_Learning": 2.2644,
+      "2_Classical_World_Model": 2.2644,
+      "4_Proposed_Hybrid_HQWM": 2.2644,
+      "5_Two_Classical_Ensemble": 2.2644
+    },
+    "p_0.4": {
+      "1_Model_Free_Q_Learning": 1.9592000000000003,
+      "2_Classical_World_Model": 1.9592000000000003,
+      "4_Proposed_Hybrid_HQWM": 1.9592000000000003,
+      "5_Two_Classical_Ensemble": 1.9592000000000003
+    }
+  },
+  "robustness_finite_shots": {
+    "shots_100": {
+      "mean_nll": 3.0920975545455915,
+      "std_nll": 1.0714182967191412
+    },
+    "shots_500": {
+      "mean_nll": 2.990362504270094,
+      "std_nll": 0.855645120000124
+    },
+    "shots_1000": {
+      "mean_nll": 2.9639042984852004,
+      "std_nll": 0.8041496393211555
+    },
+    "shots_5000": {
+      "mean_nll": 2.9581953799241303,
+      "std_nll": 0.7825430390636127
+    },
+    "shots_10000": {
+      "mean_nll": 2.9537574189365463,
+      "std_nll": 0.7830213541942388
+    }
+  }
+}
